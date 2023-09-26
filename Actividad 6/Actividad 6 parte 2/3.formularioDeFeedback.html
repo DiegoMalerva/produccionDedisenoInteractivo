@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de feedback</title>
+</head>
+<body>
+    <!-- Form: Se utiliza para crear un formulario en una página web -->
+    <!-- action: Especifica el URL del servidor que procesará los datos del formulario -->
+    <!-- method: Define el método HTTP que se utilizará para envíar los datos del formulario -->
+    <form action="#" method="post">
+
+        <!-- Label: Se utiliza para proporcionar una etiqueta o descricpión de un elemento en un formulario -->
+        <!-- for: Permite proporcionar información sobre el propósito de cada campo de entrada / Para enlazar en check box  -->
+
+        <label for="nombre">Nombre:</label>
+
+        <!-- input: Se utiliza para crear campos de entrada en formularios -->
+        <!-- type: Tipos de atributos que puede tomar el campo (Password, Checkbox, Submit) -->
+        <!-- id: Identificador similar al "For" / Selector CSS -->
+        <!-- name: Proporciona un nombre para el elemento de entrada  -->
+
+        <input type="text" id="nombre" name="nombre">
+
+        <!-- Para las siguientes líneas de código se utiliza la misma lógica -->
+
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula">
+
+        <label for="carrera">Carrera:</label>
+        <input type="text" id="carrera" name="carrera">
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="calificacion">Calificación de la Asignatura:</label>
+
+        <!-- select: Se utiliza para crear listas desplegables -->
+        <!-- id: Identificador similar al "For" -->
+        <!-- name: Proporciona un nombre para el elemento de enstrada  -->
+        <!-- option: Representa las diversas opciones que se encuentran en la lista -->
+        <!-- value: Define el valor que tendrá la opción dentro de la lista / Se puede omitir el value  -->
+
+        <select name="calificacion" id="calificacion">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <label for="comentarios">Comentarios:</label>
+
+        <!-- textarea: Se utiliza para crear áreas de texto en un formulario -->
+        <!-- name:Proporciona un nombre para el elemento de enstrada  -->
+        <!-- id: Identificador similar al "For" -->
+
+        <textarea name="comentarios" id="comentarios" ></textarea>
+
+        <!-- button: Se utiliza para crear botones interactivos -->
+        <!-- type: Tipos de atributos que puede tomar el campo (Reset, Button) -->
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
